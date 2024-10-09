@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Santiago Vinhos",
-  description: "Compre os melhores vinhos do mercado com a Santiago Vinhos",
+  description: "Adquira os melhores vinhos importados com a Santiago Vinhos",
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={inter.className}>{children}</body>
     </html>
   );
