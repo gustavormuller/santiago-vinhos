@@ -4,6 +4,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import ToggleMenu from "@/components/ui/ToggleMenu";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 
@@ -17,17 +18,7 @@ export default function Home() {
           width={90}
           height={90}
         />
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            <Menu color="#fff" size={32} />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem>Início</DropdownMenuItem>
-            <DropdownMenuItem>Sobre</DropdownMenuItem>
-            <DropdownMenuItem>Rótulos</DropdownMenuItem>
-            <DropdownMenuItem>Contato</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <ToggleMenu />
       </nav>
     </main>
   );
