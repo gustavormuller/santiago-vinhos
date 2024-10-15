@@ -16,26 +16,34 @@ const ToggleMenu = () => {
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenuTrigger className="relative w-8 h-8">
-        <Menu 
+        <Menu
           className={`absolute top-0 left-0 transition-all duration-300 ${
             isOpen ? "opacity-0 rotate-90" : "opacity-100 rotate-0"
-          }`} 
-          color="#FFF" 
-          size={32} 
+          }`}
+          color="#F9DEE5"
+          size={32}
         />
-        <X 
+        <X
           className={`absolute top-0 left-0 transition-all duration-300 ${
             isOpen ? "opacity-100 rotate-0" : "opacity-0 rotate-90"
-          }`} 
-          color="#FFF" 
-          size={32} 
+          }`}
+          color="#F9DEE5"
+          size={32}
         />
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuItem>Início</DropdownMenuItem>
-        <DropdownMenuItem>Sobre</DropdownMenuItem>
-        <DropdownMenuItem>Rótulos</DropdownMenuItem>
-        <DropdownMenuItem>Contato</DropdownMenuItem>
+      <DropdownMenuContent className="bg-[#bb2343] text-[#F9DEE5] pr-4 pl-2 pt-2 pb-3">
+        <DropdownMenuItem className="text-base font-poppins">
+          Início
+        </DropdownMenuItem>
+        <DropdownMenuItem className="text-base font-poppins">
+          Sobre
+        </DropdownMenuItem>
+        <DropdownMenuItem className="text-base font-poppins">
+          Rótulos
+        </DropdownMenuItem>
+        <DropdownMenuItem className="text-base font-poppins">
+          Contato
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

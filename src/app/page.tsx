@@ -1,24 +1,38 @@
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import ToggleMenu from "@/components/ui/ToggleMenu";
-import { Menu } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="">
-      <nav className="flex px-5 items-center justify-between bg-[#bb2343]">
+      <nav className="flex px-5 lg:px-12 py-[5px] items-center justify-between bg-[#bb2343]">
         <Image
-          src="/logo-square.png"
+          src="/logo-cut.png"
           alt="Logo da Santiago Vinhos"
           width={90}
-          height={90}
+          height={70}
+          className="lg:w-[100px]"
         />
-        <ToggleMenu />
+        <div className="flex items-center lg:hidden">
+          <ToggleMenu />
+        </div>
+        <div className="hidden lg:flex items-center text-[#F9DEE5] text-lg font-poppins">
+          <a href="#" className="mr-10 relative group">
+            <span>Início</span>
+            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          </a>
+          <a href="#" className="mr-10 relative group">
+            <span>Sobre</span>
+            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          </a>
+          <a href="#" className="mr-10 relative group">
+            <span>Rótulos</span>
+            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          </a>
+          <a href="#" className="relative group">
+            <span>Contato</span>
+            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          </a>
+        </div>
       </nav>
     </main>
   );
