@@ -31,7 +31,7 @@ const ToggleMenu = () => {
           size={32}
         />
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-[#bb2343] text-[#F9DEE5] pr-4 pl-2 pt-2 pb-3">
+      <DropdownMenuContent className="bg-[#bb2343] text-[#F9DEE5] pr-4 pl-2 pt-2 pb-3 border-[#F9DEE5] border-2">
         <DropdownMenuItem className="text-base font-poppins">
           Início
         </DropdownMenuItem>
