@@ -61,7 +61,10 @@ const config: Config = {
   			}
   		},
 		fontFamily: {
-			'poppins': 'Poppins'
+			'poppins': 'Poppins',
+			'merienda': 'Merienda',
+			'libre': 'Libre Baskerville',
+			'eb': 'EB Garamond'
 		}
   	}
   },
