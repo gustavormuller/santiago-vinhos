@@ -64,7 +64,8 @@ const config: Config = {
 			'poppins': 'Poppins',
 			'merienda': 'Merienda',
 			'libre': 'Libre Baskerville',
-			'eb': 'EB Garamond'
+			'eb': 'EB Garamond',
+			'ibarra': 'Ibarra Real Nova'
 		}
   	}
   },

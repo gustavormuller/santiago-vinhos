@@ -43,20 +43,20 @@ const Navbar = () => {
       <div className="flex items-center lg:hidden">
         <ToggleMenu />
       </div>
-      <div className="hidden lg:flex items-center text-[#F9DEE5] text-2xl font-medium font-eb">
-        <a href="#" className="mr-16 relative group">
+      <div className="hidden lg:flex items-center text-[#F9DEE5] text-2xl font-medium font-ibarra">
+        <a href="#inicio" className="mr-16 relative group">
           <span>Início</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>
-        <a href="#" className="mr-16 relative group">
+        <a href="#historia" className="mr-16 relative group">
           <span>História</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>
-        <a href="#" className="mr-16 relative group">
+        <a href="#rotulos" className="mr-16 relative group">
           <span>Rótulos</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>
-        <a href="#" className="relative group">
+        <a href="#contato" className="relative group">
           <span>Contato</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>

@@ -32,16 +32,16 @@ const ToggleMenu = () => {
         />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-[#bb2343] text-[#F9DEE5] pr-4 pl-2 pt-2 pb-3 border-[#ebcad1] border-2 mr-1">
-        <DropdownMenuItem className="text-[22px] font-eb">
+        <DropdownMenuItem className="text-[22px] font-ibarra">
           Início
         </DropdownMenuItem>
-        <DropdownMenuItem className="text-[22px] font-eb">
+        <DropdownMenuItem className="text-[22px] font-ibarra">
           História
         </DropdownMenuItem>
-        <DropdownMenuItem className="text-[22px] font-eb">
+        <DropdownMenuItem className="text-[22px] font-ibarra">
           Rótulos
         </DropdownMenuItem>
-        <DropdownMenuItem className="text-[22px] font-eb">
+        <DropdownMenuItem className="text-[22px] font-ibarra">
           Contato
         </DropdownMenuItem>
       </DropdownMenuContent>
