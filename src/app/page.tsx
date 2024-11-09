@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -80,7 +80,7 @@ export default function Home() {
       </section> */}
       <section className="px-3 py-6 bg-[#fff9ee]" id="historia">
         <div>
-          <h2 className="font-ibarra text-[36px] text-[#bb2343] font-bold">
+          <h2 className="font-ibarra text-[40px] text-[#bb2343] font-bold">
             Nossa história
           </h2>
           <p className="font-libre text-[#774023]">
@@ -102,53 +102,145 @@ export default function Home() {
           <h4 className="text-lg text-[#774023]">
             Cada garrafa, uma história.
           </h4>
-          <h2 className="font-ibarra text-[36px] text-[#bb2343] font-bold">
+          <h2 className="font-ibarra text-[40px] text-[#bb2343] font-bold">
             Nossos Rótulos
           </h2>
           <p className="text-wrap text-justify text-[#774023]">
-            Explore um catálogo de vinhos importados de vinícolas renomadas pelo
-            mundo, com rótulos que vão dos orgânicos e biodinâmicos aos
-            naturais.
+            Explore um catálogo de vinhos importados a partir de R$ 49,90, com
+            rótulos que vão dos orgânicos e biodinâmicos aos naturais.
           </p>
         </div>
-        <Carousel className="w-full overflow-hidden flex items-center justify-center">
-          <CarouselContent>
+        <Carousel className="py-5 px-1 flex flex-col w-full">
+          <CarouselContent className="h-[260px]">
             <CarouselItem>
-              <Image
-                src="/almaviva.png"
-                alt="Vinho Almaviva 2021"
-                width={200}
-                height={100}
-                className="absolute -left-7"
-              />
-              <div className="bg-[#F5EBDA] p-5 flex">
-                <div className="w-[120px]"></div>
-                <span>Almaviva 2021</span>
-              </div>
-            </CarouselItem>
-            <CarouselItem>
-              <div>
+              <div className="flex h-full w-full relative">
                 <Image
                   src="/almaviva.png"
                   alt="Vinho Almaviva 2021"
                   width={200}
                   height={100}
+                  className="absolute -left-11 z-20"
                 />
+                <div className="bg-[#F5EBDA] p-5 flex self-center w-full pl-[108px] relative z-0 rounded-md">
+                  <div className="flex flex-col items-start">
+                    <span className="text-[#482817] text-lg font-bold">
+                      Almaviva 2021
+                    </span>
+                    <span className="text-[#774023]">Vinho tinto</span>
+                    <div className="flex items-center pt-12">
+                      <span className="pr-1.5 text-[#774023]">Chile</span>
+                      <Image
+                        src="/chile-flag.png"
+                        alt="Bandeira do Chile"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </div>
+                  <Link href="/">
+                  <ShoppingCart size={32} className="ml-auto absolute bottom-5 right-5" color="#774023" />
+                  </Link>
+                </div>
               </div>
             </CarouselItem>
             <CarouselItem>
-              <div>
+              <div className="flex h-full w-full relative">
                 <Image
-                  src="/almaviva.png"
-                  alt="Vinho Almaviva 2021"
+                  src="/purafe.png"
+                  alt="Vinho Antiyal Pura Fe Carmenere 2020"
                   width={200}
                   height={100}
+                  className="absolute -left-11 z-20"
                 />
+                <div className="bg-[#F5EBDA] p-5 flex self-center w-full pl-[108px] relative z-0 rounded-md">
+                  <div className="flex flex-col items-start">
+                    <span className="text-[#482817] text-lg font-bold">
+                      Antiyal Pura Fe 2020
+                    </span>
+                    <span className="text-[#774023]">Vinho tinto</span>
+                    <div className="flex items-center pt-12">
+                      <span className="pr-1.5 text-[#774023]">Chile</span>
+                      <Image
+                        src="/chile-flag.png"
+                        alt="Bandeira do Chile"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </div>
+                  <Link href="/">
+                  <ShoppingCart size={32} className="ml-auto absolute bottom-5 right-5" color="#774023" />
+                  </Link>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="flex h-full w-full relative">
+                <Image
+                  src="/lunae-chardonnay.png"
+                  alt="Vinho Lunae Chardonnay 2021"
+                  width={200}
+                  height={100}
+                  className="absolute -left-11 z-20"
+                />
+                <div className="bg-[#F5EBDA] p-5 flex self-center w-full pl-[108px] relative z-0 rounded-md">
+                  <div className="flex flex-col items-start">
+                    <span className="text-[#482817] text-lg font-bold">
+                      Lunae chardonnay 2021
+                    </span>
+                    <span className="text-[#774023]">Vinho branco</span>
+                    <div className="flex items-center pt-12">
+                      <span className="pr-1.5 text-[#774023]">Chile</span>
+                      <Image
+                        src="/chile-flag.png"
+                        alt="Bandeira do Chile"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </div>
+                  <Link href="/">
+                  <ShoppingCart size={32} className="ml-auto absolute bottom-5 right-5" color="#774023" />
+                  </Link>
+                </div>
+              </div>
+            </CarouselItem>
+            <CarouselItem>
+              <div className="flex h-full w-full relative">
+                <Image
+                  src="/vik-milla-cala.png"
+                  alt="Vinho Vik Milla Cala 2021"
+                  width={200}
+                  height={100}
+                  className="absolute -left-11 z-20"
+                />
+                <div className="bg-[#F5EBDA] p-5 flex self-center w-full pl-[108px] relative z-0 rounded-md">
+                  <div className="flex flex-col items-start">
+                    <span className="text-[#482817] text-lg font-bold">
+                      Vik Milla Cala 2021
+                    </span>
+                    <span className="text-[#774023]">Vinho tinto</span>
+                    <div className="flex items-center pt-12">
+                      <span className="pr-1.5 text-[#774023]">Chile</span>
+                      <Image
+                        src="/chile-flag.png"
+                        alt="Bandeira do Chile"
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                  </div>
+                  <Link href="/">
+                  <ShoppingCart size={32} className="ml-auto absolute bottom-5 right-5" color="#774023" />
+                  </Link>
+                </div>
               </div>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <div className="self-center">
+            <CarouselPrevious className="relative mt-8 bg-[#F5EBDA] text-[#774023] border-[#774023] hover:bg-[#e7dac4] hover:text-[#774023] focus-visible:ring-[#F5EBDA]" />
+            <CarouselNext className="relative mt-8 bg-[#F5EBDA] text-[#774023] border-[#774023] hover:bg-[#e7dac4] hover:text-[#774023] focus-visible:ring-[#F5EBDA]" />
+          </div>
         </Carousel>
       </section>
     </main>
