@@ -61,7 +61,8 @@ export default function Home() {
             Nossos Rótulos
           </h2>
           <p className="text-wrap text-justify text-[#774023]">
-            Explore um catálogo de vinhos importados a partir de R$ 49,90, com opções de vinhos tintos, vinhos brancos e espumantes.
+            Explore um catálogo de vinhos importados a partir de R$ 49,90, com
+            opções de vinhos tintos, vinhos brancos e espumantes.
           </p>
         </div>
 
@@ -79,28 +80,35 @@ export default function Home() {
 
         <Link
           href="#"
-          className="text-base text-[#774023] text-center w-fit flex items-center gap-1 self-end"
+          className="text-base text-[#774023] text-center w-fit flex items-center gap-1 self-end pt-2"
         >
           Ver catálogo completo <ArrowRight color="#774023" size={16} />
         </Link>
       </section>
 
-      <section className="px-3 py-4 bg-[#fff9ee]" id="historia">
+      <section className="px-3 py-4 bg-[#fff9ee] flex flex-col items-center" id="historia">
         <div>
           <h2 className="font-ibarra text-[40px] text-[#bb2343] font-bold">
             Nossa história
           </h2>
           <p className="font-libre text-[#774023]">
-            Boris Acevedo, nascido no Chile, construiu sua carreira trabalhando
-            em renomados restaurantes, sempre movido pela paixão por vinhos. Com
-            mais de 20 anos de experiência como sommelier, ele se especializou
-            em vinhos orgânicos, biodinâmicos e naturais. Hoje, à frente da
-            Santiago Vinhos, Boris compartilha sua expertise trazendo ao Brasil
-            uma curadoria exclusiva dos melhores rótulos, conectando tradição,
-            sustentabilidade e qualidade em cada garrafa.
+            Boris Acevedo, nascido no Chile, possui mais de 25 anos de
+            experiência como sommelier e já colaborou com inúmeras vinícolas ao
+            redor do mundo. Com toda essa expertise, hoje está à frente da
+            Santiago Vinhos, onde utiliza seu conhecimento para trazer ao Brasil
+            os melhores rótulos disponíveis no mercado.
           </p>
         </div>
+        <Image
+            src="/borisimg.png"
+            alt="Logo da Santiago Vinhos"
+            className="self-center py-3"
+            width={300}
+            height={400}
+          />
       </section>
+
+      <section></section>
     </main>
   );
 }
