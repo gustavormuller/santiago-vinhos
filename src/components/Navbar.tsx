@@ -48,12 +48,12 @@ const Navbar = () => {
           <span>Início</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>
-        <a href="#historia" className="mr-16 relative group">
-          <span>História</span>
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-        </a>
         <a href="#rotulos" className="mr-16 relative group">
           <span>Rótulos</span>
+          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </a>
+        <a href="#historia" className="mr-16 relative group">
+          <span>História</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#F9DEE5] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </a>
         <a href="#contato" className="relative group">
